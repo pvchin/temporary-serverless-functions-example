@@ -6,6 +6,7 @@ const fetchData = async () => {
     result.textContent = data;
   } catch (error) {
     console.log(error.response.data);
+    result.textContext = error.response.data;
   }
 };
 
